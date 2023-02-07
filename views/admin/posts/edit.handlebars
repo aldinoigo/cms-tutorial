@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Create New Post</h1>
+<div class="row p-4">
+    <div class="col-md-10">
+        <form action="/admin/posts/create" method = "post">
+        
+        <div class="form-group">
+            <label for=" title" class="bg-white" "mt-5">Title</label>
+            <input type ="text" class ="form-check-input" "mt-1" name = "title" id="title" placeholder="Enter The Title">
+        </div>
+
+        <div class="form-group">
+            <label for=" status" class="bg-white">Status</label>
+            <select name = "status" id="status"class = "form-control">
+                <option value = "public">Public</option>
+                 <option value = "private">Private</option>
+                  <option value = "draft">Draft</option>
+            </select>
+        </div>
+        <div class="form-check ml-3">
+            <label for = "allowcomments">
+                <input type ="checkbox" class = "form-check-input", "bg-white" id="allowcomments" name="allowcomments">
+                Allow Comments
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for = "description" class="bg-white">Content</label>
+            <textarea name="description" id="description"class="form-control" placeholder="Enter Your Content Here" rows="10"></textarea>
+        </div>
+
+        <button class ="btn btn-outline-success btn-lg" type="submit"> Create Post</button>
+        </form>
+    </div>
+</div>
+</div>
